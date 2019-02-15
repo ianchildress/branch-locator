@@ -1,4 +1,4 @@
 package: github.com/ianchildress/branch-tools
 import:
   - package: github.com/ianchildress/dcli
-    version: develop
+    version: master
