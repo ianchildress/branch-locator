@@ -1,0 +1,6 @@
+package: github.com/ianchildress/branch-tools
+import:
+- package: github.com/ianchildress/dcli
+  version: master
+- package: github.com/ianchildress/dcli/flags
+  version: release/1.0

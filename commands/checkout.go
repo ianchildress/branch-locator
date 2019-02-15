@@ -10,10 +10,10 @@ import (
 var Checkout = &dcli.CommandNode{
 	N:       "checkout",
 	D:       "checks out a git repository",
-	RunFunc: checkoutFunc,
+	RunFunc: checkout,
 }
 
-func checkoutFunc() {
+func checkout() {
 	checkoutBranch := *flags.GetStringFlag("branch").Value()
 	if err := branch.Checkout(checkoutBranch); err != nil {
 		log.Fatal(err)
